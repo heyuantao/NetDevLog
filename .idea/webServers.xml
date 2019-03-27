@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="37dcbf8e-c01a-44c7-915f-e16b9d77b8a6" name="clouderanode01.syslab.org" url="http://clouderanode01.syslab.org">
+        <fileTransfer host="clouderanode01.syslab.org" port="22" rootFolder="/tmp" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

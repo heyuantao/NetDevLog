@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NetDevLog:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NetDevLog_jar</output-path>
+    <root id="archive" name="NetDevLog.jar">
+      <element id="module-output" name="NetDevLog" />
+    </root>
+  </artifact>
+</component>
