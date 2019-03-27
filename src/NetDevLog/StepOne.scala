@@ -1,5 +1,6 @@
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.SparkConf
 import org.apache.log4j.{Level,Logger}
@@ -19,20 +20,20 @@ object StepOne {
     }
     val inputFile =  args(1)
     val conf = new SparkConf().setAppName("StepOne").setMaster(args(0))
-
-    val sc = new SparkContext(conf)
-    val sqlContext = new SQLContext(sc)
+    //val sparkContext = new SparkContext(conf)
+    val sparkSession = SparkSession.builder().config(conf).getOrCreate()
+    val sparkContext = sparkSession.sparkContext
 
     val schemaString = "data action source_ip source_port dest_ip dest_port"
-    val schema = StructType(schemaString.split(" ").map(fieldName => StructField(fieldName, StringType, true)))
+    val schema = StructType(schemaString.split(" ").map(fieldName => StructField(fieldName, StringType)))
+    val textFile = sparkContext.textFile(inputFile)
 
-    val textFile = sc.textFile(inputFile)
     val rowRDD = textFile.map(_.split(" ")).map(p=>Row(p(0),p(1),p(2),p(3),p(4),p(5)))
-    val logDataFrame = sqlContext.createDataFrame(rowRDD, schema)
+    val logDataFrame = sparkSession.createDataFrame(rowRDD, schema)
 
     logDataFrame.createOrReplaceTempView("log")
 
-    val display_rdd = sqlContext.sql("select source_ip,dest_ip from log where  dest_port=22").rdd
+    val display_rdd = sparkSession.sql("select source_ip,dest_ip from log where  dest_port=22").rdd
     display_rdd.take(10).foreach(println)
   }
 }
