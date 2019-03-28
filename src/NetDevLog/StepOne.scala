@@ -33,5 +33,7 @@ object StepOne {
 
     val display_rdd = sparkSession.sql("select source_ip,dest_ip from log where  dest_port=22").rdd
     display_rdd.take(10).foreach(println)
+
+    println(logDataFrame.printSchema())
   }
 }
