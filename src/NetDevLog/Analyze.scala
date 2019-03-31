@@ -1,8 +1,5 @@
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkConf
-import org.apache.spark.SparkConf
-import scala.util.matching.Regex
 import org.apache.log4j.{Level,Logger}
 
 object Analyze {
@@ -14,10 +11,13 @@ object Analyze {
       println("Two params require !")
       return
     }
-    val inputFile =  args(1)
-    val conf = new SparkConf().setAppName("SrxLog").setMaster(args(0))
-    val sc = new SparkContext(conf)
-    val textFile = sc.textFile(inputFile)
+
+    val input_file =  args(1)
+    val spark_session = SparkSession.builder().appName("Analyze").master(args(0))
+      .getOrCreate()
+    val spark_context = spark_session.sparkContext
+
+    val textFile = spark_context.textFile(input_file)
 
     val lines = textFile.map(line=>line).filter(_.length>0)
     //lines.saveAsTextFile("file:///d:/srx240h-2019.03.output")

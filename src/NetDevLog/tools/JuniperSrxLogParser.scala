@@ -1,6 +1,11 @@
+package tools
+
+import org.apache.spark.sql.Row
+import org.apache.spark.sql.types.{StringType, StructField, StructType}
+
 import scala.util.matching.Regex
 
-class JuniperSrxLogParser extends Serializable {
+object JuniperSrxLogParser extends Serializable {
 
   val session_create_string = "session created"
   val session_close_string = "session closed unset:"
@@ -39,7 +44,6 @@ class JuniperSrxLogParser extends Serializable {
       sport = ip_part(0).split("/")(1)
       dip = ip_part(1).split("/")(0)
       dport = ip_part(1).split("/")(1)
-      action = "create"
       return_string = time+" "+action+" "+sip+" "+sport+" "+dip+" "+dport
     }
     else if (raw_string.contains(session_create_string)){
@@ -53,10 +57,30 @@ class JuniperSrxLogParser extends Serializable {
       dport = ip_part(1).split("/")(1)
       action = "close"
       return_string = time+" "+action+" "+sip+" "+sport+" "+dip+" "+dport
+      //Row(time,action,sip,sport,dip,dport)
     }else{
       return_string = ""
+      //Row()
     }
-
     return_string
+  }
+
+  def getStruct():StructType = {
+    val struct = StructType(
+      Array(
+        StructField("date",StringType,nullable = true),
+        StructField("action",StringType,nullable = true),
+        StructField("source_ip",StringType,nullable = true),
+        StructField("source_port",StringType,nullable = true),
+        StructField("dest_ip",StringType,nullable = true),
+        StructField("dest_port",StringType,nullable = true)
+      )
+    )
+    struct
+  }
+
+  def toRow(line:String):Row ={
+    val item=line.split(" ")
+    Row(item(0),item(1),item(2),item(3),item(4),item(5))
   }
 }

@@ -1,7 +1,9 @@
 import org.apache.spark.SparkContext
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.SparkContext._
 import org.apache.spark.SparkConf
-import org.apache.log4j.{Level,Logger}
+import org.apache.log4j.{Level, Logger}
+import tools.JuniperSrxLogParser
 
 object Preprocess {
   def main(args: Array[String]) {
@@ -12,16 +14,25 @@ object Preprocess {
       println("Three params required !")
       return
     }
-    val inputFile =  args(1)
-    val outputFile = args(2)
-    val conf = new SparkConf().setAppName("LogInsight").setMaster(args(0))
+    val input_file =  args(1)
+    val output_file = args(2)
+    val spark_session = SparkSession.builder().appName("Preprocess").master(args(0))
+      .getOrCreate()
+    val spark_context = spark_session.sparkContext
 
-    val sc = new SparkContext(conf)
-    val textFile = sc.textFile(inputFile)
-    val parser = new JuniperSrxLogParser()
-    val lines = textFile.filter(parser.isValideLine(_)).map(line=>parser.getTimeAndIPInformationFromLine(line))
+    val textFile = spark_context.textFile(input_file)
 
-    lines.take(10).foreach(println)
-    lines.saveAsTextFile(outputFile)
+    val row_lines = textFile.filter(JuniperSrxLogParser.isValideLine(_))
+        .map(line=>JuniperSrxLogParser.getTimeAndIPInformationFromLine(line))
+
+    val dataframe = spark_session.createDataFrame(row_lines.map(x=>JuniperSrxLogParser.toRow(x)),
+      JuniperSrxLogParser.getStruct())
+
+    dataframe.write.mode("Overwrite").format("parquet").save(output_file)
+
+    dataframe.take(10).foreach(println)
+    dataframe.printSchema()
+
+    spark_session.close()
   }
 }

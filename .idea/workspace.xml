@@ -7,16 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95de8446-8ade-47a6-bdf0-e59512c81db0" name="Default Changelist" comment="spark context">
-      <change afterPath="$PROJECT_DIR$/src/NetDevLog/DateUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetDevLog/tools/DateUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NetDevLog/tools/JuniperSrxLogParser.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NetDevLog/StepOne.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetDevLog/StepOne.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Record$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Record$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Record.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepOne$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StepOne$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StepOne$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetDevLog/DateUtils.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetDevLog/JuniperSrxLogParser.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetDevLog/Preprocess.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetDevLog/Preprocess.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JuniperSrxLogParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Preprocess$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Preprocess$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Preprocess$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Preprocess$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Preprocess$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Preprocess$$anonfun$main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Preprocess$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Preprocess$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,20 +30,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NetDevLog/DateUtils.scala">
+        <entry file="file://$PROJECT_DIR$/src/NetDevLog/Preprocess.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="97" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
+            <state relative-caret-position="189">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NetDevLog/Analyze.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mode</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,15 +76,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/NetDevLog/JuniperSrxLogParser.scala" />
-        <option value="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" />
-        <option value="$PROJECT_DIR$/src/NetDevLog/Preprocess.scala" />
         <option value="$PROJECT_DIR$/src/shell/run.sh" />
         <option value="$PROJECT_DIR$/target/classes/.gitignore" />
         <option value="$PROJECT_DIR$/target/.gitignore" />
         <option value="$PROJECT_DIR$/src/NetDevLog/StepOneV2.scala" />
         <option value="$PROJECT_DIR$/src/NetDevLog/StepOne.scala" />
         <option value="$PROJECT_DIR$/src/NetDevLog/DateUtils.scala" />
+        <option value="$PROJECT_DIR$/src/NetDevLog/JuniperSrxLogParser.scala" />
+        <option value="$PROJECT_DIR$/src/NetDevLog/tools/DateUtils.scala" />
+        <option value="$PROJECT_DIR$/src/NetDevLog/tools/JuniperSrxLogParser.scala" />
+        <option value="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" />
+        <option value="$PROJECT_DIR$/src/NetDevLog/Preprocess.scala" />
       </list>
     </option>
   </component>
@@ -75,8 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +143,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,13 +159,14 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553785850354" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553995774733" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/NetDevLog_jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.37011495" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -158,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DateUtils">
+  <component name="RunManager" selected="Application.Preprocess">
     <configuration name="Analyze" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Analyze" />
       <module name="NetDevLog" />
@@ -168,7 +198,7 @@
       </method>
     </configuration>
     <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="DateUtils" />
+      <option name="MAIN_CLASS_NAME" value="tools.DateUtils" />
       <module name="NetDevLog" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,10 +237,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Preprocess" />
         <item itemvalue="Application.DateUtils" />
         <item itemvalue="Application.StepOneV2" />
         <item itemvalue="Application.StepOne" />
-        <item itemvalue="Application.Preprocess" />
       </list>
     </recent_temporary>
   </component>
@@ -234,6 +264,8 @@
       <workItem from="1553408723896" duration="1408000" />
       <workItem from="1553691914373" duration="5363000" />
       <workItem from="1553782425784" duration="2291000" />
+      <workItem from="1553942720882" duration="703000" />
+      <workItem from="1553991327624" duration="3875000" />
     </task>
     <task id="LOCAL-00001" summary="session problem">
       <created>1553694548457</created>
@@ -267,13 +299,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21048000" />
+    <option name="totallyTimeSpent" value="25626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18986385" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23827533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -282,7 +314,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2852459" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3885246" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -316,18 +348,6 @@
     <MESSAGE value="spark context" />
     <option name="LAST_COMMIT_MESSAGE" value="spark context" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/NetDevLog/DateUtils.scala</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -343,47 +363,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/.gitignore" />
     <entry file="file://$PROJECT_DIR$/src/NetDevLog/StepOneV2.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NetDevLog/StepOne.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NetDevLog/JuniperSrxLogParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NetDevLog/Preprocess.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NetDevLog/Analyze.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -398,12 +382,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.4.0/spark-core_2.11-2.4.0.jar!/org/apache/spark/rdd/RDD.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="37" column="76" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NetDevLog/DateUtils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="97" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
+        <state relative-caret-position="221">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/JuniperSrxLogParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#335#648#0" />
+            <element signature="e#2129#2574#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0.jar!/org/apache/spark/sql/DataFrameWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.4.0/spark-sql_2.11-2.4.0.jar!/org/apache/spark/sql/SaveMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/tools/JuniperSrxLogParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/tools/DateUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/StepOne.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/Analyze.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/Preprocess.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,8 +475,8 @@
             <show-content>
               <type id="jpa-descriptors" />
               <type id="library" />
-              <type id="javaee-facet-resources" />
               <type id="artifact" />
+              <type id="javaee-facet-resources" />
             </show-content>
           </artifact-editor>
           <last-edited>NetDevLog:jar</last-edited>
@@ -438,7 +496,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37011495" />
               </list>
             </option>
           </splitter-proportions>
@@ -462,7 +520,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37011495" />
               </list>
             </option>
           </splitter-proportions>
@@ -474,7 +532,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37011495" />
                 <option value="0.6" />
               </list>
             </option>
