@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95de8446-8ade-47a6-bdf0-e59512c81db0" name="Default Changelist" comment="spark context">
-      <change afterPath="$PROJECT_DIR$/src/NetDevLog/tools/MySQLUtils.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetDevLog/tools/MySQLUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/NetDevLog/tools/MySQLUtils.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Analyze$$anonfun$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Analyze$$anonfun$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Analyze$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Analyze$.class" afterDir="false" />
@@ -30,23 +31,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/NetDevLog/Analyze.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="909">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
               <folding>
-                <element signature="e#0#53#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NetDevLog/tools/MySQLUtils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="54">
+              <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+              <folding>
+                <element signature="e#14#76#0" expanded="true" />
+                <element signature="e#169#257#0" />
+                <element signature="e#246#533#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -72,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/shell/run.sh" />
         <option value="$PROJECT_DIR$/target/classes/.gitignore" />
         <option value="$PROJECT_DIR$/target/.gitignore" />
@@ -83,8 +97,9 @@
         <option value="$PROJECT_DIR$/src/NetDevLog/tools/DateUtils.scala" />
         <option value="$PROJECT_DIR$/src/NetDevLog/Preprocess.scala" />
         <option value="$PROJECT_DIR$/src/NetDevLog/tools/JuniperSrxLogParser.scala" />
-        <option value="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/NetDevLog/tools/MySQLUtils.scala" />
+        <option value="$PROJECT_DIR$/src/NetDevLog/Analyze.scala" />
       </list>
     </option>
   </component>
@@ -113,12 +128,6 @@
               <item name="NetDevLog" type="b2602c69:ProjectViewProjectNode" />
               <item name="NetDevLog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NetDevLog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NetDevLog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NetDevLog" type="b2602c69:ProjectViewProjectNode" />
@@ -164,7 +173,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554003369766" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554009835464" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/NetDevLog_jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -193,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MySQLUtils">
+  <component name="RunManager" selected="Application.Analyze">
     <configuration name="Analyze" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Analyze" />
       <module name="NetDevLog" />
@@ -256,7 +265,7 @@
       <workItem from="1553691914373" duration="5363000" />
       <workItem from="1553782425784" duration="2291000" />
       <workItem from="1553942720882" duration="703000" />
-      <workItem from="1553991327624" duration="9262000" />
+      <workItem from="1553991327624" duration="11662000" />
     </task>
     <task id="LOCAL-00001" summary="session problem">
       <created>1553694548457</created>
@@ -300,17 +309,24 @@
       <option name="project" value="LOCAL" />
       <updated>1554001980178</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test mysql connection">
+      <created>1554003399700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554003399700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31013000" />
+    <option name="totallyTimeSpent" value="33413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17473525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17473525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -319,7 +335,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18196721" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40163934" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,16 +369,10 @@
     <MESSAGE value="spark context" />
     <MESSAGE value="spark session" />
     <MESSAGE value="use sql to query" />
-    <option name="LAST_COMMIT_MESSAGE" value="use sql to query" />
+    <MESSAGE value="test mysql connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="test mysql connection" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="74" column="10" lean-forward="true" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shell/run.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -480,20 +490,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NetDevLog/Analyze.scala">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NetDevLog/tools/MySQLUtils.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="54">
+          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+          <folding>
+            <element signature="e#14#76#0" expanded="true" />
+            <element signature="e#169#257#0" />
+            <element signature="e#246#533#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NetDevLog/Analyze.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="909">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
