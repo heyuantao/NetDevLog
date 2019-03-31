@@ -44,6 +44,7 @@ object JuniperSrxLogParser extends Serializable {
       sport = ip_part(0).split("/")(1)
       dip = ip_part(1).split("/")(0)
       dport = ip_part(1).split("/")(1)
+      action = "open"
       return_string = time+" "+action+" "+sip+" "+sport+" "+dip+" "+dport
     }
     else if (raw_string.contains(session_create_string)){
@@ -51,6 +52,7 @@ object JuniperSrxLogParser extends Serializable {
       var matched_string_part = matched_string.split(" ")
       val ip_part = matched_string_part(0).split("->")
       time = raw_string.split(" ")(0)
+      //time = DateUtils.getTime(time)
       sip = ip_part(0).split("/")(0)
       sport = ip_part(0).split("/")(1)
       dip = ip_part(1).split("/")(0)

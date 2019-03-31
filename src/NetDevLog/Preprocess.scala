@@ -26,12 +26,14 @@ object Preprocess {
         .map(line=>JuniperSrxLogParser.getTimeAndIPInformationFromLine(line))
 
     val dataframe = spark_session.createDataFrame(row_lines.map(x=>JuniperSrxLogParser.toRow(x)),
-      JuniperSrxLogParser.getStruct())
+      JuniperSrxLogParser.getStruct()).coalesce(1)
 
-    dataframe.write.mode("Overwrite").format("parquet").save(output_file)
+    dataframe.write.mode("Overwrite").format("parquet").
+      save(output_file)
 
-    dataframe.take(10).foreach(println)
+    //dataframe.take(10).foreach(println)
     dataframe.printSchema()
+    dataframe.show(20)
 
     spark_session.close()
   }
