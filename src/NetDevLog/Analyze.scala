@@ -19,22 +19,19 @@ object Analyze {
 
     val dataframe = spark_session.read.format("parquet").load(input_file)
 
-    //dataframe.printSchema()
-    //dataframe.show(false)
-    println("Top access !")
+    println("Query Result  !")
     topAccess(spark_session,dataframe)
     spark_session.stop()
   }
 
   def topAccess(sc:SparkSession,df:DataFrame): Unit ={
-    import sc.implicits._
-
-    //val number01 = df.select("dest_ip").agg(count("dest_ip"))
-    //val number02 = df.filter($"dest_ip" === "151.101.228.167").agg(count("dest_ip"))
-    //number01.show(false)
-    //number02.show(false)
     df.createOrReplaceTempView("access")
-    val result = sc.sql("select count(*) from access where dest_ip='151.101.228.167' ")
+    val query_cmd="""
+      select source_port,count(source_port) from access where dest_ip='151.101.228.167' group by source_port
+        order by source_port
+      """
+    //val query_cmd = "select * from access where dest_ip='151.101.228.167' "
+    val result = sc.sql(query_cmd)
     result.show(false)
   }
 
