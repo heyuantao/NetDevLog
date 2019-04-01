@@ -3,6 +3,7 @@ import java.util.Properties
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.functions._
+import tools.DataBaseUtils
 
 object Analyze {
 
@@ -22,6 +23,7 @@ object Analyze {
     val dataframe = spark_session.read.format("parquet").load(input_file)
 
     println("Query Result  !")
+    DataBaseUtils.run()
     topAccess(spark_session,dataframe)
     spark_session.stop()
   }
@@ -41,9 +43,10 @@ object Analyze {
     connectionProperties.put("url", "jdbc:mysql://localhost:3306/spark");
     connectionProperties.put("user", "root");
     //connectionProperties.put("password", "password");
-    result.write.mode("append")
+    val result_with_id=result.withColumn("id",monotonically_increasing_id()+1000)
+    result_with_id.write.mode("append")
       .jdbc("jdbc:mysql://localhost:3306/spark","spark.result",connectionProperties)
-    //停止SparkContext
+    //停止SparkContext .option("truncate",true)
   }
 
 }
