@@ -21,8 +21,6 @@ object ReadJOL {
 
     var connectionProperties = new Properties();
     connectionProperties.put("driver", "com.mysql.jdbc.Driver");
-    //connectionProperties.put("url", "jdbc:mysql://localhost:3306/jol");
-    //connectionProperties.put("dbtable","jol.solution")
     connectionProperties.put("user", "root");
 
     val df = spark_session.read.jdbc("jdbc:mysql://localhost:3306/","jol.solution",connectionProperties)
