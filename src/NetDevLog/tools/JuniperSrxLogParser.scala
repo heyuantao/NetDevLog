@@ -1,5 +1,4 @@
 package tools
-
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 
